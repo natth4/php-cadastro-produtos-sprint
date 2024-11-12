@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta - UtopiaTech</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #EAEAEA; /* Cinza Claro */
+            color: #333; /* Cor do texto */
+            margin: 0; /* Remove a margem padrão */
+            padding: 0; /* Remove o preenchimento padrão */
+            display: flex;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            height: 100vh; /* Altura da viewport */
+        }
+        .container {
+            background-color: #FFFFFF; /* Branco */
+            border-radius: 10px; /* Arredonda os cantos */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            padding: 30px; /* Espaço interno */
+            width: 600px; /* Largura fixa da caixa */
+        }
+        .titulo {
+            text-align: center; /* Centraliza o texto */
+            color: #3A5A7E; /* Azul Escuro */
+            margin-bottom: 20px; /* Margem abaixo do título */
+        }
+        .nav-cadastro {
+            margin-top: 10px; /* Margem acima do rótulo */
+            display: block; /* Faz o rótulo ocupar a linha inteira */
+        }
+        input[type="text"], input[type="password"], input[type="email"] {
+            width: 100%; /* Largura total do campo */
+            padding: 10px; /* Espaço interno */
+            margin-top: 5px; /* Margem acima do campo */
+            border: 1px solid #78B6C1; /* Borda azul médio */
+            border-radius: 5px; /* Arredonda os cantos do campo */
+            box-sizing: border-box; /* Inclui padding e border na largura total */
+        }
+        .botão {
+            background-color: #78B6C1; /* Azul Médio */
+            color: white; /* Cor do texto do botão */
+            border: none; /* Remove a borda padrão */
+            padding: 10px; /* Espaço interno do botão */
+            margin-top: 15px; /* Margem acima do botão */
+            width: 100%; /* Largura total do botão */
+            border-radius: 5px; /* Arredonda os cantos do botão */
+            cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+        }
+        .botão:hover {
+            background-color: #A4D7E1; /* Azul Claro ao passar o mouse */
+        }
+        .login {
+            text-align: center; /* Centraliza o texto de login */
+            margin-top: 20px; /* Margem acima da seção de login */
+        }
+        .login a {
+            color: #3A5A7E; /* Azul Escuro */
+            text-decoration: none; /* Remove o sublinhado do link */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="titulo">Entre pro nosso grupo!</h2> <!-- Título da página -->
+        <form id="cadastro-form"> <!-- Formulário de cadastro -->
+            <label for="name" class="nav-cadastro">Nome:</label>
+            <input type="text" id="name" required> <!-- Campo de entrada para nome -->
+
+            <label for="email" class="nav-cadastro">E-mail:</label>
+            <input type="email" id="email" required> <!-- Campo de entrada para email -->
+            
+            <label for="password" class="nav-cadastro">Senha:</label>
+            <input type="password" id="password" required> <!-- Campo de entrada para senha -->
+            
+            <button type="submit" class="botão">Criar Conta</button> <!-- Botão de envio -->
+        </form>
+        <div class="login"> <!-- Seção de login -->
+            <p>Já é nosso parceiro? <a href="login.html">Faça Login</a></p> <!-- Link para a página de login -->
+        </div>
+    </div>
+
+    <script>
+        // Simulando um cadastro com armazenamento simples em memória
+        const usuarios = []; // Array para armazenar usuários cadastrados
+
+        document.getElementById('cadastro-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Previne o envio padrão do formulário
+
+            const nome = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const senha = document.getElementById('password').value;
+
+            // Adiciona o novo usuário ao array
+            usuarios.push({ nome, email, senha });
+            alert('Conta criada com sucesso! Você pode fazer login agora.');
+            window.location.href = 'login.html'; // Redireciona para a página de login
+        });
+    </script>
+</body>
+</html>
