@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - UtopiaTech</title>
+    <title>Login - TechSupplies</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,7 +15,9 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            background-image: url(fundo.jpeg);
         }
+
         .container {
             background-color: #FFFFFF;
             border-radius: 10px;
@@ -24,15 +26,18 @@
             width: 100%;
             max-width: 600px;
         }
+
         .login {
             text-align: center;
-            color: #3A5A7E;
+            color: #05007A;
             margin-bottom: 20px;
         }
+
         label {
             margin-top: 10px;
             display: block;
         }
+
         input[type="text"], input[type="password"], input[type="email"] {
             width: 100%;
             padding: 10px;
@@ -41,8 +46,9 @@
             border-radius: 5px;
             box-sizing: border-box;
         }
+
         .botão {
-            background-color: #78B6C1;
+            background-color: #4F52BD;
             color: white;
             border: none;
             padding: 10px;
@@ -51,16 +57,32 @@
             border-radius: 5px;
             cursor: pointer;
         }
+
         .botão:hover {
-            background-color: #A4D7E1;
+            background-color: #0047AB;
         }
+
         .cadastro {
             text-align: center;
             margin-top: 20px;
         }
+
         .cadastro a {
-            color: #3A5A7E;
+            color: #05007A;
             text-decoration: none;
+        }
+
+        /* Estilo para posicionar a logo no canto inferior esquerdo */
+        .logo {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            margin: 20px;
+        }
+
+        .logo img {
+            width: 100px; /* Ajuste o tamanho conforme necessário */
+            height: auto;
         }
     </style>
 </head>
@@ -81,25 +103,32 @@
         </div>
     </div>
 
+    <div class="logo">
+        <img src="TechSupplies.png" alt="logo">
+    </div>
+
     <script>
         // Simulação de um banco de dados de usuários
         const users = [
             { email: "felipesliisenai@gmail.com", password: "12345" },
-            { email: "ignacio@gmail.com", password: "ignacio123" }
-            { email: "nathh2207@gmail.com", password: "33706244" }
-            { email: "nathanribeiro22@gmail.com", password: "nathan1234" }
-            { email: "valmir@gmail.com", password: "123Valmir" }
-        ];
+            { email: "ignacio@gmail.com", password: "ignacio123" },
+            { email: "nathh2207@gmail.com", password: "33706244" },
+            { email: "nathanribeiro22@gmail.com", password: "nathan1234" },
+            { email: "valmir@gmail.com", password: "123Valmir" }, // Vírgula adicionada aqui
+            { email: "mari.magaine@gmail.com", password: "mari1234" }
+            { email: "pedro@gmail.com", password: "1234" }
 
+        ];
+    
         document.getElementById('login-form').addEventListener('submit', function(event) {
             event.preventDefault(); // Evita o envio padrão do formulário
-
+    
             const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
-
+    
             // Verifica se o usuário está cadastrado
             const user = users.find(user => user.email === email && user.password === password);
-
+    
             if (user) {
                 // Redireciona para a página inicial
                 window.location.href = "home.html"; // Altere para o URL da sua página inicial
@@ -108,9 +137,6 @@
             }
         });
     </script>
+    
 </body>
 </html>
-
-
-
-

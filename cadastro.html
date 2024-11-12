@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criar Conta - UtopiaTech</title>
+    <title>Criar Conta - TechSupplies</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,18 +14,20 @@
             display: flex;
             justify-content: center; /* Centraliza horizontalmente */
             align-items: center; /* Centraliza verticalmente */
-            height: 100vh; /* Altura da viewport */
+            height: 100vh; /* Altura da viewport */    
+            background-image: url(fundo.jpeg);
         }
+
         .container {
             background-color: #FFFFFF; /* Branco */
-            border-radius: 10px; /* Arredonda os cantos */
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            border-radius: 15px; /* Arredonda os cantos */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
             padding: 30px; /* Espaço interno */
-            width: 600px; /* Largura fixa da caixa */
+            width: 550px; /* Largura fixa da caixa */
         }
         .titulo {
             text-align: center; /* Centraliza o texto */
-            color: #3A5A7E; /* Azul Escuro */
+            color: #05007A; /* Azul Escuro */
             margin-bottom: 20px; /* Margem abaixo do título */
         }
         .nav-cadastro {
@@ -36,12 +38,12 @@
             width: 100%; /* Largura total do campo */
             padding: 10px; /* Espaço interno */
             margin-top: 5px; /* Margem acima do campo */
-            border: 1px solid #78B6C1; /* Borda azul médio */
+            border: 1px solid #B8B9D1; /* Borda azul médio */
             border-radius: 5px; /* Arredonda os cantos do campo */
             box-sizing: border-box; /* Inclui padding e border na largura total */
         }
         .botão {
-            background-color: #78B6C1; /* Azul Médio */
+            background-color: #4F52BD; /* Azul Médio */
             color: white; /* Cor do texto do botão */
             border: none; /* Remove a borda padrão */
             padding: 10px; /* Espaço interno do botão */
@@ -51,7 +53,7 @@
             cursor: pointer; /* Muda o cursor ao passar sobre o botão */
         }
         .botão:hover {
-            background-color: #A4D7E1; /* Azul Claro ao passar o mouse */
+            background-color: #0047AB; /* Azul Claro ao passar o mouse */
         }
         .login {
             text-align: center; /* Centraliza o texto de login */
@@ -81,8 +83,12 @@
         <div class="login"> <!-- Seção de login -->
             <p>Já é nosso parceiro? <a href="login.html">Faça Login</a></p> <!-- Link para a página de login -->
         </div>
+
+
     </div>
 
+    
+   
     <script>
         // Simulando um cadastro com armazenamento simples em memória
         const usuarios = []; // Array para armazenar usuários cadastrados

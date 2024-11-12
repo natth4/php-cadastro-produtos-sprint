@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - TechSupplies</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F5F5F5; /* Fundo cinza claro */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #333333; /* Texto cinza escuro */
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #080A9D; /* Azul acinzentado */
+            padding: 15px;
+            padding-left: 0;
+            color: white;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+        }
+        .logo-area img {
+            width: 190px;
+            height: 90px;
+            margin-right: 10px;
+            padding: 0;
+        }
+        .search-area {
+            display: flex;
+        }
+        input[type="text"] {
+            padding: 5px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            background-color: #FFF; /* Fundo branco */
+        }
+        .botão {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            background-color: #4F52BD; /* Verde suave */
+            color: white;
+            cursor: pointer;
+        }
+        .botão:hover {
+            background-color: #0047AB; /* Verde mais claro ao passar o mouse */
+        }
+        .produtos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0 40px 0;
+            flex: 1;
+        }
+
+        .Steam {
+            display: block;
+            margin: 20px auto;
+            width: 1290px;
+            height: 480px ;
+            border-radius: 10px;
+        }
+
+        .produto {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .produto img {
+            max-width: 100%;
+            max-height: 150px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .produto h3 {
+            font-size: 1.1em;
+            margin: 10px 0;
+            color: #05007A; /* Azul acinzentado */
+        }
+        .produto p {
+            font-size: 0.9em;
+            margin: 5px 0;
+        }
+        h2 {
+            font-size: 1.9rem;
+            text-align: center;
+            color: #05007A; /* Azul acinzentado */
+            margin-top: 40px;
+            
+        }
+        
+    
+        .rodapé {
+            background-color: #080A9D; /* Cinza chumbo */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+        .rodapé a {
+            color: white;
+            text-decoration: none;
+        }
+        .rodapé a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo-area">
+            <img src="TechSuppliesClaro.png" alt="Logo da UtopiaTech">
+            <h1 style="margin: 0; color: white;"></h1>
+        </div>
+        <div class="search-area">
+            <input type="text" placeholder="Pesquisar...">
+            <button type="button" class="botão">Buscar</button>
+        </div>
+        <div>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="login.html">Login</a>
+            <a href="cadastrar-produtos.html">Cadastrar Produtos</a>
+        </div>
+    </div>
+
+    <img class="Steam" src="SteamDeck.jpeg" alt="img">
+
+    <h2>Melhores Produtos</h2>
+
+    <!-- Blocos de Produtos -->
+    <div class="produtos">
+        <div class="produto">
+            <img src="produto1.jpeg" alt="Produto 1">
+            <h3>Placa de Vídeo Asus GeForce RTX 4090</h3>
+            <p>As placas de vídeo NVIDIA® GeForce RTX® Série 40 são mais que rápidas para gamers e criadores.</p>
+            <p><strong>R$ 5099,90</strong></p>
+        </div>
+
+        <div class="produto">
+            <img src="produto2.jpeg" alt="Produto 2">
+            <h3>Processador Intel Core i9 14900K 14ª</h3>
+            <p>Processador Intel Core i5-13420H de 13° Geração série H com 8 núcleos, GPU Nvidia GeForce RTX 3050.</p>
+            <p><strong>R$ 1900,90</strong></p>
+        </div>
+
+        <div class="produto">
+            <img src="produto3.jpeg" alt="Produto 3">
+            <h3>Notebook Acer Nitro V15</h3>
+            <p>Notebook Acer Nitro V15 ANV15-51-58AZ 13ª Geração Intel Core i5-13420H, 8GB RAM, 512GB SSD.</p>
+            <p><strong>R$ 4999,90</strong></p>
+        </div>
+
+        <div class="produto">
+            <img src="produto4.jpeg" alt="Produto 4">
+            <h3>Mouse Logitech G Pro X Superlight</h3>
+            <p>O mouse sem fio mais leve da Logitech, desenvolvido para eSports com desempenho extremo.</p>
+            <p><strong>R$ 599,90</strong></p>
+        </div>
+
+        <div class="produto">
+            <img src="produto5.jpeg" alt="Produto 5">
+            <h3>Monitor LG UltraGear 27GL83A-B</h3>
+            <p>Monitor gamer 27", 144Hz, 1ms, IPS, QHD, G-Sync, HDR10, para máxima performance.</p>
+            <p><strong> Fora de Estoque</strong></p>
+        </div>
+    </div>
+
+    <footer class="rodapé">
+        <p>&copy; 2024 UtopiaTech. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
